@@ -14,11 +14,9 @@
 
     echo "chckpnt2".'<br><br>';
 
-    $router->get('' , [Controller::class, 'index']);
     $router->get('/' , [Controller::class, 'index']);
-    $router->get('/public' , [Controller::class, 'index']);
    
-    $router->get('/employees/create.php', [Controller::class, 'create']);
+    $router->get('/employees/create', [Controller::class, 'create']);
     $router->post('/employees/create', [Controller::class, 'create']);
     
     $router->get('/employees/update', [Controller::class, 'update']);
