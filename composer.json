@@ -1,0 +1,15 @@
+{
+    "name": "workstation/ceminicrmphp",
+    "autoload": {
+        "psr-4": {
+            "Workstation\\Ceminicrmphp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "darkopet",
+            "email": "darkodepetrovski@gmail.com"
+        }
+    ],
+    "require": {}
+}
