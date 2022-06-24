@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit2d76cb817bc1029f858caa80ac7e4aa0
 {
     public static $prefixLengthsPsr4 = array (
+        'a' => 
+        array (
+            'app\\' => 4,
+        ),
         'W' => 
         array (
             'Workstation\\Ceminicrmphp\\' => 25,
@@ -14,6 +18,10 @@ class ComposerStaticInit2d76cb817bc1029f858caa80ac7e4aa0
     );
 
     public static $prefixDirsPsr4 = array (
+        'app\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/',
+        ),
         'Workstation\\Ceminicrmphp\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',

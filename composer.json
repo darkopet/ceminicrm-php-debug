@@ -2,7 +2,8 @@
     "name": "workstation/ceminicrmphp",
     "autoload": {
         "psr-4": {
-            "Workstation\\Ceminicrmphp\\": "src/"
+            "Workstation\\Ceminicrmphp\\": "src/",
+            "app\\":"./"
         }
     },
     "authors": [
