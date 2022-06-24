@@ -3,6 +3,8 @@
 /** Class ROUTER */
 
 namespace app;
+
+use app\controllers\Controller;
 use app\Database;
 
 class Router 

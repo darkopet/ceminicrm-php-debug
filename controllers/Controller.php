@@ -1,8 +1,9 @@
 <?php
 
     namespace app\controllers;
-    use app\models\employees;
+    use app\models\Employee;
     use app\Router;
+    use app\Database;
 
     /** Class CONTROLLER */
 
@@ -11,6 +12,7 @@
         public function index(Router $router)
         {
             echo "Index page".'<br>';
+            
             // echo '<pre>';
             // var_dump($employees);
             // echo '</pre>';
@@ -21,7 +23,7 @@
 
             $search = $_GET['search'] ?? '';
             
-            $employees = $router->db->getemployees($search); 
+            $employees = $router->db->getEmployee($search); 
             
             // echo '<pre>';
             // var_dump($employees);
@@ -55,7 +57,7 @@
                 $EmployeeData['Phone'] = $_POST['Phone'] ?? null;
 
                 # Instance of the class Employee created before
-                $Employee = new employees();
+                $Employee = new Employee();
                 # Loading into the model
                 $Employee->load($EmployeeData);
                 $errors = $Employee->save();
@@ -87,7 +89,7 @@
                 $EmployeeData['CompanyEmail'] = $_POST['CompanyEmail'] ?? null;
                 $EmployeeData['Phone'] = $_POST['Phone'] ?? null;
                 # Instance of the class Employee created before
-                $Employee = new employees();
+                $Employee = new Employee();
                 # Loading into the model
                 $Employee->load($EmployeeData);
                 $errors = $Employee->save();

@@ -1,9 +1,12 @@
 <?php
 
 namespace app\models;
-use app\Database;
 
-    class employees
+use app\controllers\Controller;
+use app\Database;
+use app\Router;
+
+    class Employee
     {
         public ?int $id = null;
         public ?string $FirstName = null;
