@@ -1,4 +1,4 @@
-<h1>employees AdminPanel</h1>
+<h1>Employees AdminPanel</h1>
     <p>
         <a href="/views/employees/create.php" class="btn btn-success">Insert New Employee</a>
     </p>

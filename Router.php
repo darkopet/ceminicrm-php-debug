@@ -68,9 +68,9 @@ class Router
         else 
         { $fn = $this->postRoutes[$currentUrl] ?? null; }
 
-                echo "<pre>";
-                var_dump($fn);
-                echo "</pre>";  
+                // echo "<pre>";
+                // var_dump($fn);
+                // echo "</pre>";  
 
                 echo "<pre>";
                 var_dump($this);
