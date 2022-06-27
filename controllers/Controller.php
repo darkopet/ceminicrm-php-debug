@@ -1,6 +1,7 @@
 <?php
 
     namespace app\controllers;
+
     use app\models\Employee;
     use app\Router;
     use app\Database;
@@ -11,15 +12,15 @@
     {
         public function index(Router $router)
         {
-            echo "Index page".'<br>';
+            // echo "Index page".'<br>';
             
             // echo '<pre>';
             // var_dump($employees);
             // echo '</pre>';
             
-            // echo '<pre>';
-            // var_dump($router);
-            // echo '</pre>';
+            echo '<pre>';
+            var_dump($router);
+            echo '</pre>';
 
             $search = $_GET['search'] ?? '';
             
